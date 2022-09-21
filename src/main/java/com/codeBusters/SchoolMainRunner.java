@@ -1,10 +1,10 @@
-package com.gogetters;
+package com.codeBusters;
 
-import com.gogetters.entity.Course;
-import com.gogetters.entity.Parent;
-import com.gogetters.entity.School;
-import com.gogetters.entity.Student;
-import com.gogetters.service.*;
+import com.codeBusters.entity.Course;
+import com.codeBusters.entity.Parent;
+import com.codeBusters.entity.School;
+import com.codeBusters.entity.Student;
+import com.codeBusters.service.*;
 
 import java.util.ArrayList;
 import java.util.List;

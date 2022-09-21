@@ -1,9 +1,11 @@
-package com.gogetters.service;
+package com.codeBusters.service;
 
-import com.gogetters.database.Database;
-import com.gogetters.entity.School;
+import com.codeBusters.database.Database;
+import com.codeBusters.entity.School;
 
 import java.util.List;
+
+import static java.util.stream.Collectors.toList;
 
 public class SchoolService implements CRUDService<School> {
 
@@ -27,7 +29,7 @@ public class SchoolService implements CRUDService<School> {
     @Override
     public void update(School school) {
         List<School> filteredList = Database.schoolList.stream()
-                .filter(school1 -> school1.id == school.id).toList();
+                .filter(school1 -> school1.id == school.id).collect(toList());
 
         filteredList.add(school);
         Database.schoolList = filteredList;
@@ -36,6 +38,6 @@ public class SchoolService implements CRUDService<School> {
     @Override
     public void deleteById(Long id) {
         Database.schoolList =  Database.schoolList.stream()
-                .filter(school1 -> school1.id == id).toList();
+                .filter(school1 -> school1.id == id).collect(toList());
     }
 }

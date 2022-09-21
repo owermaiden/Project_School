@@ -1,10 +1,12 @@
-package com.gogetters.service;
+package com.codeBusters.service;
 
-import com.gogetters.database.Database;
-import com.gogetters.entity.Parent;
+import com.codeBusters.database.Database;
+import com.codeBusters.entity.Parent;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class ParentService implements CRUDService<Parent> {
     @Override
@@ -36,6 +38,6 @@ public class ParentService implements CRUDService<Parent> {
     @Override
     public void deleteById(Long id) {
         Database.parentList = Database.parentList.stream()
-                .filter(parent1 -> parent1.id == id).toList();
+                .filter(parent1 -> parent1.id == id).collect(toList());
     }
 }

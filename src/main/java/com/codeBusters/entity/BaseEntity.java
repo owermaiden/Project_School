@@ -1,4 +1,4 @@
-package com.gogetters.entity;
+package com.codeBusters.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

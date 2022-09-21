@@ -1,4 +1,4 @@
-package com.gogetters.enums;
+package com.codeBusters.enums;
 
 public enum WeekDays {
 

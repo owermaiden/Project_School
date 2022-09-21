@@ -1,4 +1,4 @@
-package com.gogetters.entity;
+package com.codeBusters.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
+
 public class School extends BaseEntity {
 
     private String name;

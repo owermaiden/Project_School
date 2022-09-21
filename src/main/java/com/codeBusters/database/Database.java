@@ -1,10 +1,10 @@
-package com.gogetters.database;
+package com.codeBusters.database;
 
-import com.gogetters.entity.Course;
-import com.gogetters.entity.Parent;
-import com.gogetters.entity.School;
-import com.gogetters.entity.Student;
-import com.gogetters.enums.WeekDays;
+import com.codeBusters.entity.Course;
+import com.codeBusters.entity.Parent;
+import com.codeBusters.entity.School;
+import com.codeBusters.entity.Student;
+import com.codeBusters.enums.WeekDays;
 
 import java.util.ArrayList;
 import java.util.List;
